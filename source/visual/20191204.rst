@@ -87,7 +87,7 @@ find pi digit with elastic collision
                 plt.plot(self.times,newrecordx2)
 
 .. note::
-    moving in phase graph
+    motion in phase space graph
 
 .. image:: image/phase.png
 
@@ -95,7 +95,7 @@ find pi digit with elastic collision
     x positions by time graph
 
     Blueline: small box
-    
+
     Orangeline: Big box
 
 .. image:: image/xbytime.png
