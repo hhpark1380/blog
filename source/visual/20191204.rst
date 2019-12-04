@@ -93,8 +93,9 @@ find pi digit with elastic collision
 
 .. note::
     x positions by time graph
-    
+
     Blueline: small box
+    
     Orangeline: Big box
 
 .. image:: image/xbytime.png
