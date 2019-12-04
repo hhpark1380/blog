@@ -12,8 +12,9 @@ Hyunho is disgusting
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
+
    study
+   visual
 
 
 
