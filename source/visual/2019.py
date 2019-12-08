@@ -10,39 +10,40 @@ class count:
 
     Attributes
     ----------
-    m1 : type
-        Description of attribute `m1`.
-    m2 : type
-        Description of attribute `m2`.
-    v1 : type
-        Description of attribute `v1`.
-    v2 : type
-        Description of attribute `v2`.
-    x1 : type
-        Description of attribute `x1`.
-    x2 : type
-        Description of attribute `x2`.
-    l1 : type
-        Description of attribute `l1`.
-    l2 : type
-        Description of attribute `l2`.
-    count : type
-        Description of attribute `count`.
-    record1 : type
-        Description of attribute `record1`.
-    record2 : type
-        Description of attribute `record2`.
-    recordx1 : type
-        Description of attribute `recordx1`.
+    m1 : float
+        mass of light box
+    m2 : float
+        mass of heavy box
+    v1 : float
+        speed of light box
+    v2 : float
+        speed of heavy box
+    x1 : float
+        location of light box
+    x2 : float
+        location of light box
+    l1 : float
+        size of light box
+    l2 : float
+        size of heavy box
+    count : int
+        counting number of collision
+    record1 : array
+        recorded array of (speed of light box)/root(mass of light box)
+    record2 : array
+        recorded array of (speed of heavy box)/root(mass of heavy box)
+    recordx1 : array
+        recorded array of x1
     recordx2 : type
-        Description of attribute `recordx2`.
-    times : type
-        Description of attribute `times`.
-    time : type
-        Description of attribute `time`.
-    findpi : type
-        Description of attribute `findpi`.
-    digit
+        recorded array of x2
+    times : array
+        recorded array of the time after collision
+    time : float
+        time between each collisions
+    findpi : fuction
+        run to count the number of collisions
+    digit : int
+        number of digit of pi
 
     """
     def __init__(self,digit):
@@ -68,12 +69,12 @@ class count:
     #find pi with eventdriven collision events
 
     def findpi(self):
-        """Short summary.
+        """count each collisions in each events, and sum
 
         Returns
         -------
         type
-            Description of returned object.
+            it returns number of counted collisions
 
         """
         while True:
@@ -109,14 +110,15 @@ class count:
                 self.record2.append(self.v2/np.sqrt(self.m2))
     #plot the phasespce graph with v1/sqrt(m1) and v2/sqrt(m2)
     def plotphase(self,sizex=4,sizey=4):
-        """Short summary.
+        """with recorded v1 and v2, plot the graph in phasespace
 
         Parameters
         ----------
-        sizex : type
-            Description of parameter `sizex`.
-        sizey : type
-            Description of parameter `sizey`.
+        sizex : int
+
+            x size of figure
+        sizey : int
+            y size of figure
 
         Returns
         -------
@@ -129,16 +131,16 @@ class count:
 
     #plot the position by time graph
     def plotpos(self,sizex=6,sizey=3,stick=False):
-        """Short summary.
+        """with array of times , x1 and x2, plot the graph
 
         Parameters
         ----------
-        sizex : type
-            Description of parameter `sizex`.
-        sizey : type
-            Description of parameter `sizey`.
-        stick : type
-            Description of parameter `stick`.
+        sizex : int
+            x size of figure
+        sizey : int
+            y size of figure
+        stick : true or false
+            if true, stick the two graph
 
         Returns
         -------
