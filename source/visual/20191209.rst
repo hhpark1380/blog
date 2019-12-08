@@ -1,0 +1,17 @@
+2019. 12. 09
+====================
+
+find pi digits with collision in vpython (GUI things)
+----------------------------------------------------------
+
+.. note:: Made GUI and visualized collisions
+
+
+.. literalinclude:: finalproject.py
+    :language: python
+    :linenos:
+
+
+Picture of GUI and graph
+
+    .. image:: image/result.png
